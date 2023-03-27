@@ -1,0 +1,30 @@
+--Create a Treat Store Database
+
+CREATE TABLE Sweet_Treats (id INTEGER PRIMARY KEY, name TEXT, type_of_treat TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO Sweet_Treats VALUES (1, "Peach Pie", "Dessert", 1, 15);
+INSERT INTO Sweet_Treats VALUES (2, "Rice Crispies", "Snack",1, 2);
+INSERT INTO Sweet_Treats VALUES (3, "Apple Pie", "Dessert", 1, 15);
+INSERT INTO Sweet_Treats VALUES (4, "Vannilla Ice cream", "Dessert", 1, 5);
+INSERT INTO Sweet_Treats VALUES (5, "Cupcakes", "Dessert", 12, 20);
+INSERT INTO Sweet_Treats VALUES (6, "Cherry Pie", "Dessert", 1, 15);
+INSERT INTO Sweet_Treats VALUES (7, "Chocolate Pudding", "Snack", 1, 3);
+INSERT INTO Sweet_Treats VALUES (8, "Chocolate Chip Cookies", "Snack", 12, 10);
+INSERT INTO Sweet_Treats VALUES (9, "Snickerdoodle Cookies","Treats", 12, 10);
+INSERT INTO Sweet_Treats VALUES (10, "Cherry Cheesecake","Dessert",1,15);
+INSERT INTO Sweet_Treats VALUES (11, "Upside Down Pinneapple Cake", "Dessert", 1, 15);
+INSERT INTO Sweet_Treats VALUES (12, "Blueberry Crumble Pie", "Dessert", 1, 15);
+INSERT INTO Sweet_Treats VALUES (13, "Peach Crisp", "Dessert", 1, 15);
+INSERT INTO Sweet_Treats VALUES (14, "Cake Balls", "Snack", 6, 2);
+INSERT INTO Sweet_Treats VALUES (15, "Brownies", "Dessert", 12, 10);
+
+--Display the treats by Desserts
+
+SELECT * FROM Sweet_Treats Where type_of_treat = "Dessert" ORDER BY price;
+
+--What is the sum of the price of desserts
+
+SELECT SUM(price) FROM Sweet_Treats;
+
+--Display the treats by Snack
+
+SELECT * FROM SWEET_TREATS WHERE type_of_treat= "Snack";
